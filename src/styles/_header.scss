@@ -1,0 +1,30 @@
+.header{
+ background-color: $dark-blue;
+ width: 100%;
+ display: flex;
+ justify-content:space-around;
+
+
+
+ h1{
+     color:white;
+     font-size:32px
+ }
+
+ 
+}
+.link{
+  text-decoration: none;
+  color: white;
+}
+.links{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.nav-link{
+ color:white;
+ text-decoration: none;
+ margin-left:10px;
+ font-size: $l-size;
+
+}

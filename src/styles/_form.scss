@@ -1,0 +1,70 @@
+.form{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:$m-size;
+    border:1px solid lightsteelblue;
+}
+.wrapper-for-zero-expense{
+    align-items: center;
+    padding:$m-size;
+    border:1px solid lightsteelblue;
+}
+
+.wrapper-for-expenselist{
+    display:flex;
+    justify-content:space-between;
+    margin-top: 10px;
+    padding:$s-size;
+    border:1px solid lightsteelblue;
+    background-color: #EEEEEE;
+}
+
+.edit-link{
+text-decoration: none;
+color: black;
+text-transform: capitalize;
+font-weight: bolder;
+}
+
+.edit-link:hover{
+    color: #1e90ff;
+}
+
+.edit-exp{
+    text-align: center;
+}
+
+.visibility-span{
+    margin:0;
+    padding: 3px;
+}
+
+.amount-tag{
+color: black;
+text-transform: capitalize;
+font-weight: bolder;
+text-align: right;
+}
+
+.button-tag{
+    color: white;
+    text-transform: capitalize;
+    font-weight: bolder;
+    background-color: darkgray;
+    border: none;
+    font-size: $l-size;
+    }
+@media(min-width:640px){
+    .form,.wrapper-for-expenselist,.zero-expense{
+        margin-left:300px;
+        margin-right:300px;
+    }
+}
+
+.zero-expense{
+    text-align: center;
+    align-items: center;
+    padding:$m-size;
+    border:1px solid lightsteelblue;
+}

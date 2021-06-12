@@ -1,0 +1,35 @@
+.desc,.note,.date,.amt{
+    width:290px;
+    height: 40px;
+    padding: 10px;
+    font-size:20px;
+    margin-top: 20px;
+}
+.err,.add-exp-title{
+    text-align: center;  
+}
+
+.add-exp-form{ 
+    text-align: center;
+}
+
+.add-exp-button{
+    margin-top: 10px;
+    color: white;
+    font-size: $l-size;
+    background-color:#1e90ff;
+    border: none;
+    height: 40px;
+    text-align: left;
+   
+}
+
+@media(min-width:720px){
+    .desc,.note,.date,.amt{
+        width:720px;
+        height: 40px;
+        padding: 10px;
+        font-size:20px;
+        margin-top: 20px;
+    }
+}
