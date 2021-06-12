@@ -12,7 +12,7 @@ const ExpenseList = () => {
                 <p>Expense</p>
                 <p>Amount</p>
             </div>
-            {!expenses.length && <h3 className="zero-expense">Your Expenses Will Be Displayed Here</h3>}
+            {!expenses.length && <h3 className="zero-expense">No Expenses Found</h3>}
             {expenses.map((exp) => {
                 return <ExpenseListItem key={exp.id} expense={exp} />
             }).sort((a, b) => {
