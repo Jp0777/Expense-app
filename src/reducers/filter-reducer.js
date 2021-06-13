@@ -25,6 +25,13 @@ const filterReducer = (state, action) => {
                 ...state,
                 endDate: action.edate
             }
+        case 'CLEAR_DATES':
+            return {
+                ...state,
+                startDate: '',
+                endDate: '',
+                text: ''
+            }
         default:
             return state;
     }

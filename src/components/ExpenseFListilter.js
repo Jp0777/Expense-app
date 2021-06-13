@@ -43,7 +43,10 @@ const ExpenseListFilter = () => {
                     onChange={(e) => {
                         dispatch(setEndDate(e.target.value))
                     }} value={state.filters.endDate} />
-            </div>
+            </div><br />
+            <button
+                className="btn-clear-dates"
+                onClick={() => { dispatch({ type: 'CLEAR_DATES' }) }}>See All the expense Till Date</button>
         </div>
     )
 }
