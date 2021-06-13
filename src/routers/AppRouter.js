@@ -17,7 +17,9 @@ const AppRouter = () => {
         expenses: [expenseReducer, (JSON.parse(localStorage.getItem('state')) || [])],
         filters: [filterReducer, {
             text: '',
-            sortBy: 'date'
+            sortBy: 'date',
+            startDate: '',
+            endDate: undefined,
         }]
     })
     const [state, dispatch] = useReducer(rootReducer, initialstate);
@@ -55,11 +57,4 @@ export { stateContext, dispatchContext }
 
 
 
-
-            // <button onClick={addExp} >Click</button>
-
-            // <button onClick={editExp}>Edit</button>
-
-            // <button onClick={startDateFilter}>Set Start Date Filter</button>
-            // <button onClick={endDateFilter}>Set End Date Filter</button>
 

@@ -17,5 +17,18 @@ const setSortByAmount = () => {
     }
 }
 
+const setStartDate = (stdate) => {
+    return {
+        type: 'SET_STARTDATE',
+        stdate
+    }
+}
+const setEndDate = (edate) => {
+    return {
+        type: 'SET_ENDDATE',
+        edate
+    }
+}
 
-export { setText, setSortByDate, setSortByAmount };
+
+export { setText, setSortByDate, setSortByAmount, setStartDate, setEndDate };

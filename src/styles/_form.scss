@@ -55,11 +55,12 @@ text-align: right;
     border: none;
     font-size: $l-size;
     }
-@media(min-width:640px){
-    .form,.wrapper-for-expenselist,.zero-expense{
-        margin-left:300px;
-        margin-right:300px;
+@media(min-width:720px){
+    .form,.zero-expense, .wrapper-for-expenselist{
+        margin-left: 16%;
+        margin-right: 16%;
     }
+  
 }
 
 .zero-expense{

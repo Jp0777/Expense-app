@@ -18,12 +18,12 @@ const filterReducer = (state, action) => {
         case 'SET_STARTDATE':
             return {
                 ...state,
-                startDate: action.startDate
+                startDate: action.stdate
             }
         case 'SET_ENDDATE':
             return {
                 ...state,
-                endDate: action.endDate
+                endDate: action.edate
             }
         default:
             return state;

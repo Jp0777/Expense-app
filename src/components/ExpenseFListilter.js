@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { stateContext, dispatchContext } from '../routers/AppRouter';
-import { setText, setSortByDate, setSortByAmount } from '../actions/filters';
+import { setText, setSortByDate, setSortByAmount, setStartDate, setEndDate } from '../actions/filters';
 
 
 const ExpenseListFilter = () => {
@@ -29,6 +29,21 @@ const ExpenseListFilter = () => {
                 <option value="amount" >Amount</option>
                 <option value="date">Date</option>
             </select>
+            <div><br />
+                <input
+                    className="stdate"
+                    type="date"
+                    onChange={(e) => {
+                        dispatch(setStartDate(e.target.value))
+                    }}
+                    value={state.filters.startDate} />&nbsp;
+                <input
+                    className="edate"
+                    type="date"
+                    onChange={(e) => {
+                        dispatch(setEndDate(e.target.value))
+                    }} value={state.filters.endDate} />
+            </div>
         </div>
     )
 }

@@ -5,7 +5,13 @@ import ExpenseListItem from './ExpenseListItem'
 const ExpenseList = () => {
 
     const state = useContext(stateContext)
-    const expenses = state.expenses.filter((exp) => exp.description.toLowerCase().includes(state.filters.text.toLowerCase()))
+    let expensesOld = state.expenses.filter((exp) => exp.description.toLowerCase().includes(state.filters.text.toLowerCase()))
+    let expenses = expensesOld;
+    if (state.filters.startDate && state.filters.endDate) {
+        expenses = expensesOld.filter((exp) => {
+            return (exp.createdAt >= state.filters.startDate && exp.createdAt <= state.filters.endDate)
+        })
+    }
     return (
         <>
             <div className="wrapper-for-expenselist">
